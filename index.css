@@ -5,33 +5,15 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-
-h1 {
-  text-align: center;
-  color: white;
-  line-height: 100px;
-  margin: 0;
-}
-
-article {
-  padding: 10px;
-  margin: 10px;
-  background: #E5E5E5;
-}
-
-/* Add your flexbox CSS below here */
-
 section {
     display: flex;
-    max-width: 620px;
+    max-width: 91vh;
     background: #FFFFFF;
     border-radius: 20px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 1vh;
     flex-direction: column;
 }
-
-
 
 /*first img*/
 
@@ -42,7 +24,6 @@ section {
     align-items: center;
     margin: auto;
     margin-top: 28px;
-    margin-bottom: 10spx;
 }
 
 .first igm {
@@ -54,7 +35,6 @@ section {
 }
 
 .first h1 {
-    background-color: aqua;
     font-family: 'Inter';
     font-style: bolder;
     font-weight: 600;
@@ -73,8 +53,9 @@ section {
 /*inputs*/
 
 .inputs {
-    
-    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
    
     justify-content: center;
     align-items: center;
@@ -84,16 +65,99 @@ section {
     
 }
 
-.inputs p {
+.name-container {
     width: 500px;
     margin: 5px auto;
-    background-color: rgb(175, 171, 171);
+    
     color: #767676;
-}
-
-
-#name-button {
-    max-width: 500px;
-    width: 492px;
     
 }
+
+.name p {
+    margin: 1px;
+}
+
+.name input {
+    width: 100%;
+}
+
+
+
+.second-container  {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: 5px auto;
+    
+    color: #767676
+}
+
+.email {
+    flex: 2;
+    height: 44px;
+    
+}
+
+.email p {
+    margin-bottom: 1px;
+}
+
+.email input {
+    width: 90%;
+    margin-right: 5px;
+   
+}
+
+
+
+.phone p {
+    margin-bottom: 1px;
+}
+
+.phone input {
+    width: 100%;
+    margin-right: 5px;
+}
+
+
+
+.third-container  {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    margin: 5px auto;
+    margin-bottom: 150px;
+    
+    color: #767676
+}
+
+.password {
+    flex: 2;
+    height: 44px;
+    
+}
+
+.password p {
+    margin-bottom: 1px;
+}
+
+.password input {
+    width: 90%;
+    margin-right: 5px;
+   
+}
+
+.birthday p {
+    margin-bottom: 1px;
+}
+
+.birthday input {
+    width: 100%;
+    margin-right: 5px;
+}
+
+
+
+
+
+
