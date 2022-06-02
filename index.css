@@ -11,7 +11,7 @@ section {
     background: #FFFFFF;
     border-radius: 20px;
     margin: auto;
-    margin-top: 7vh;
+    margin-top: 5vh;
     flex-direction: column;
 }
 
@@ -155,10 +155,12 @@ input[type="date"], input[type="time"] {
 
 /*check and button*/
 .last-container {
-    margin-top: 5vw;
-    margin-bottom: 2vw;
+    margin-top: 5rem;
     display: flex;
-    height: 3rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    align-items: flex-start;
+    justify-content: left;
 }
 
 /*check box*/
@@ -170,16 +172,60 @@ input[type="date"], input[type="time"] {
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
+    align-items: flex-start;
+    justify-content: left;
+   
     
 }
 
+
+.last-container p {
+    margin-bottom: 8px;
+}
+
 .check-box-label label {
+    display: flex;
     padding-top: 3.2px;
+    font-weight: bold;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+
+   
 }
 
 .check-box-label input {
-    margin: 0;
+    display: flex;
+    
+
+    opacity: 0;
+    width: 1em;
+    height: 1em;
+}
+
+
+.checkbox__control {
+   display: flex;
+    width: 1em;
+    height: 1em;
+    border-radius: 0.25em;
+    border: 0.1em solid currentColor;
+    margin-bottom: 20px;
     margin-right: 5px;
+
+}
+
+.checkbox__control svg {
+    transition: transform 0.1s ease-in 25ms;
+    transform: scale(0);
+    transform-origin: bottom left;
+}
+  
+  
+.checkbox__input input:checked
+ + .checkbox__control svg {
+  transform: scale(1);
+  background-color: #0DBDBD;
 }
 
 
@@ -188,7 +234,10 @@ input[type="date"], input[type="time"] {
     display: flex;
     flex: 1;
     justify-content: end;
+    margin-top: 10px;
   
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 .button-container button {
@@ -197,13 +246,12 @@ input[type="date"], input[type="time"] {
     text-align: center;
     color: white;
     font-size: 1.2rem;
-    padding: ;
 
-    
-
+    padding: 6px;
     background-color: #0DBDBD;;
     border-radius: 9px;
     border: 2px solid #0DBDBD; 
+    
 
     cursor: pointer;
     
