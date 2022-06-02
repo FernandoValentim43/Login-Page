@@ -8,15 +8,9 @@
     <link rel="stylesheet" href="index.css" />
     <title>Login Page</title>
   </head>
+
+
   <body>
-    <head>
-      <meta charset="utf-8" />
-      <title>Flexbox 0 — starting code</title>
-    </head>
-
-    <body>
-      
-
       <section>
        <div class="first">
            <img src="/data 1.png" alt="">
@@ -28,14 +22,14 @@
         <div class="full-name-container">
           <p class="name">Full name*</p>
           <input type="text" placeholder="Name">
-          <p class="error">Fullname Invalid</p>
+          <p class="error" id="error" >Fullname Invalid</p>
         </div>
 
         <div class="second-container">
           <div class="email-container">
             <p class="name">Email*</p>
             <input type="email" placeholder="foo@bar.com">
-            <p class="error">Email Invalid</p>
+            <p class="error" id="error">Email Invalid</p>
           </div>
 
           <div class="phone-container">
@@ -70,27 +64,15 @@
           </div>
 
           <div class="button-container">
-            <button>Register</button>
+            <button id="button" onclick="check()">Register</button>
           </div>
-
-
         </div>
-
-         
-
-         
+       
+      </div>
 
 
-
-
-
-
-       </div>
       </section>
 
-     
-
-
-    </body>
+      <script src="index.js"></script>
   </body>
 </html>

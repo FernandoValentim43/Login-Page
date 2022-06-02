@@ -54,6 +54,7 @@ section {
     padding-bottom: 5px;
     font-family: 'Nunito', sans-serif;
     font-size: 0.80rem;
+    visibility: hidden;
 }
 
 input {
@@ -202,6 +203,8 @@ input[type="date"], input[type="time"] {
     padding: 12px;
     border-radius: 9px;
     border: 2px solid #0DBDBD; 
+
+    cursor: pointer;
     
 }
 
