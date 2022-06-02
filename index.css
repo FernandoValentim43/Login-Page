@@ -18,146 +18,117 @@ section {
 /*first img*/
 
 .first {
-    
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    margin-top: 28px;
-}
-
-.first igm {
-    position: absolute;
-    width: 213px;
-    height: 124px;
-    left: 389px;
-    top: 321px;
+    margin-top: 5px;
 }
 
 .first h1 {
     font-family: 'Inter';
     font-style: bolder;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 24px;
+    font-weight: 900;
+    font-size: 5.8vh;
     color: black;
-    padding: 10px;
-
-    flex-wrap: wrap;
-    margin: 15px;
+    padding: 6px;
+    margin: 0vh;
 }
-
 
 
 
 /*inputs*/
 
 .inputs {
+    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
-    max-width: 500px;
-   
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-   
-    padding-bottom: 20px;
-    
+    margin-left: 6vw;
+    margin-right: 6vw;
+
+    flex-direction: column;
 }
 
-.name-container {
-    width: 500px;
-    margin: 5px auto;
-    
-    color: #767676;
-    
-}
-
-.name p {
-    margin: 1px;
-}
-
-.name input {
+.error {
+    color: red;
+    margin-top: 0.2vh;
+    margin-bottom: 0;
     width: 100%;
+    padding-bottom: 5px;
+}
+
+input {
+    height: 23px;
 }
 
 
+/*name input*/
 
-.second-container  {
+
+.name {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+.full-name-container input {
+    width: 98%;
+}
+
+
+/*email & phone*/
+
+.second-container {
     display: flex;
-    flex-direction: row;
-    width: 500px;
-    margin: 5px auto;
-    
-    color: #767676
 }
 
-.email {
+
+
+/*email*/
+.email-container {
     flex: 2;
-    height: 44px;
-    
 }
 
-.email p {
-    margin-bottom: 1px;
-}
 
-.email input {
+.email-container input {
+    margin-right: 50px;
     width: 90%;
-    margin-right: 5px;
-   
 }
 
-
-
-.phone p {
-    margin-bottom: 1px;
+/*phone*/
+.phone-container {
+    flex: 1;
 }
 
-.phone input {
-    width: 100%;
-    margin-right: 5px;
+.phone-container input {
+    width: 94%;
 }
 
+/*password & birthday*/
 
 
-.third-container  {
+.third-container {
     display: flex;
-    flex-direction: row;
-    width: 500px;
-    margin: 5px auto;
-    margin-bottom: 150px;
-    
-    color: #767676
 }
 
-.password {
+/*Password*/
+
+.password-container {
     flex: 2;
-    height: 44px;
-    
 }
 
-.password p {
-    margin-bottom: 1px;
-}
 
-.password input {
+.password-container input {
+    margin-right: 50px;
     width: 90%;
-    margin-right: 5px;
-   
 }
 
-.birthday p {
-    margin-bottom: 1px;
+/*birthday*/
+.birthday-container {
+    flex: 1;
 }
 
-.birthday input {
-    width: 100%;
-    margin-right: 5px;
+.birthday-container input {
+    width: 94%;
 }
-
-
-
-
-
-
