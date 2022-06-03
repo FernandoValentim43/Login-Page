@@ -171,11 +171,19 @@ input[type="date"], input[type="time"] {
 
 /*check and button*/
 .last-container {
+
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     align-items: flex-start;
     justify-content: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    flex-direction: row;
 }
 
 /*check box*/
@@ -194,9 +202,7 @@ input[type="date"], input[type="time"] {
 }
 
 
-.last-container p {
-    margin-bottom: 8px;
-}
+
 
 .check-box-label label {
     display: flex;
@@ -214,6 +220,10 @@ input[type="date"], input[type="time"] {
     opacity: 0;
     width: 1em;
     height: 1em;
+}
+
+#check-error {
+    font-weight: lighter;
 }
 
 
@@ -292,8 +302,36 @@ input[type="date"], input[type="time"] {
    
 }
 
+/*media queries*/
+
+@media only screen and (max-width: 660px) {
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+
+    /*main*/
+    .main {
+        margin: 3vh;
+    }
+
+    .main h1 {
+        font-size: 2.3rem;
+    }
+    
+
+    .inputs {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
 
 
+
+
+  
+
+
+
+}
 
 
   

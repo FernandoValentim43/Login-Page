@@ -12,6 +12,7 @@ function check() {
 
 
    if (chkBike.checked) {
+     document.getElementById("last").style.display = "none";
      document.getElementById("inputs").style.display = "none";
      document.getElementById("returnPage").style.display = "flex";
   } 
@@ -19,6 +20,7 @@ function check() {
 
 //return to main page
 function returnButton() {
+  document.getElementById("last").style.display = "flex";
   document.getElementById("inputs").style.display = "flex";
   document.getElementById("returnPage").style.display = "none";
 }
