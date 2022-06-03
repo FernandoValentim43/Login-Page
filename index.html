@@ -12,9 +12,9 @@
 
   <body>
       <section class="main" id="main">
-       <div class="first">
-           <img src="/data 1.png" alt="">
-           <h1>Intern Sign Up</h1>
+       <div class="first" id="first">
+           <img src="/data 1.png" >
+           <h1 id="title">Intern Sign Up</h1>
        </div>
 
        <div class="inputs" id="inputs">    
@@ -38,16 +38,21 @@
             </div>         
           </div>
 
-          <div class="phone-container">
+          <div class="third-container">
+            <div class="phone-container">
               <p class="name">Phone</p>
               <input type="tel" placeholder="(83) 00000-0000">
               <p class="error">Phone Invalid</p>
+          </div>    
 
               <div class="birthday-container">
                 <p class="name">Birthday*</p>
                 <input type="date">
                 <p class="error">Age Invalid</p>
             </div>
+          </div>
+
+
           </div>
         </div>
 
@@ -82,6 +87,10 @@
 
       <!--hidden-->
       <section class="return" id="returnPage">
+        <div class="second">
+          <img src="/data 1.png" >
+          <h1 id="sucess">Sucess!</h1>
+      </div>
         <button class="return-button" id="return" onclick="returnButton()" >Go Back!</button>
       </section>
 
