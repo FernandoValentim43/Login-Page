@@ -1,5 +1,4 @@
 
-
 let titleH1 = document.getElementById("title").innerText;
 let chkBike = document.getElementById("check"); //checkbox
 //get all "errors" P, then run trough the node list turning each of them invisible;
