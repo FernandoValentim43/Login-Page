@@ -1,18 +1,33 @@
+
 body {
   margin: 0;
+  height: 100%; 
+  overflow: hidden;
   padding: 0;
   background-color: #e5e5e5;
   font-family: 'Inter', sans-serif;
 }
 
+
 section {
-    display: flex;
-    max-width: 90vh;
     background: #FFFFFF;
     border-radius: 20px;
     margin: auto;
-    margin-top: 5vh;
     flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    height: 92vh
+}
+
+
+img {
+    max-width: 30vh;
+}
+
+
+.main {
+    display: flex;
+    max-width: 90vh;
 }
 
 /*first img*/
@@ -156,7 +171,6 @@ input[type="date"], input[type="time"] {
 
 /*check and button*/
 .last-container {
-    margin-top: 5rem;
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -251,9 +265,35 @@ input[type="date"], input[type="time"] {
     background-color: #0DBDBD;;
     border-radius: 9px;
     border: 2px solid #0DBDBD; 
-    
-
     cursor: pointer;
     
+} 
+
+/*return page*/
+.return {
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 
+.return-button {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 5.8vh;    text-align: center;
+    color: white;
+    font-weight: bold;
+
+    padding: 5.9vh;
+    background-color: #0DBDBD;;
+    border-radius: 9px;
+    border: 2px solid #0DBDBD; 
+    cursor: pointer;
+
+   
+}
+
+
+
+
+
+  

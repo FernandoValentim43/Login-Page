@@ -11,13 +11,13 @@
 
 
   <body>
-      <section>
+      <section class="main" id="main">
        <div class="first">
            <img src="/data 1.png" alt="">
            <h1>Intern Sign Up</h1>
        </div>
 
-       <div class="inputs">    
+       <div class="inputs" id="inputs">    
              
         <div class="full-name-container">
           <p class="name">Full name*</p>
@@ -75,9 +75,16 @@
           <div class="button-container">
             <button id="button" onclick="check()">Register</button>
           </div>
-        </div>
+        </div> 
        
       </div>
+
+
+
+      <!--hidden-->
+      <section class="return" id="returnPage">
+        <button class="return-button" id="return" onclick="returnButton()" >Go Back!</button>
+      </section>
 
 
       </section>
