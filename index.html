@@ -11,13 +11,20 @@
 
 
   <body>
+<<<<<<< HEAD
       <section>
        <div class="first">
            <img src="https://raw.githubusercontent.com/FernandoValentim43/Login-Page/master/data%201.png" alt="">
            <h1>Intern Sign Up</h1>
+=======
+      <section class="main" id="main">
+       <div class="first" id="first">
+           <img src="https://raw.githubusercontent.com/FernandoValentim43/Login-Page/master/data%201.png" >
+           <h1 id="title">Intern Sign Up</h1>
+>>>>>>> phone
        </div>
 
-       <div class="inputs">    
+       <div class="inputs" id="inputs">    
              
         <div class="full-name-container">
           <p class="name">Full name*</p>
@@ -30,32 +37,36 @@
             <p class="name">Email*</p>
             <input type="email" placeholder="foo@bar.com">
             <p class="error" id="error">Email Invalid</p>
+
+            <div class="password-container">
+              <p class="name">Password*</p>
+              <input type="password">
+              <p class="error">Password Invalid</p>
+            </div>         
           </div>
 
-          <div class="phone-container">
+          <div class="third-container">
+            <div class="phone-container">
               <p class="name">Phone</p>
               <input type="tel" placeholder="(83) 00000-0000">
               <p class="error">Phone Invalid</p>
+          </div>    
+
+              <div class="birthday-container">
+                <p class="name">Birthday*</p>
+                <input type="date">
+                <p class="error">Age Invalid</p>
+            </div>
+          </div>
+
+
           </div>
         </div>
 
-
-        <div class="third-container">
-          <div class="password-container">
-            <p class="name">Password*</p>
-            <input type="password">
-            <p class="error">Password Invalid</p>
-          </div>
-
-          <div class="birthday-container">
-              <p class="name">Birthday*</p>
-              <input type="date">
-              <p class="error">Age Invalid</p>
-          </div>
         </div>
 
 
-        <div class="last-container">
+        <div class="last-container" id="last">
           <div class="check-box-container">
            <div class="check-box-label">
             <label class="checkbox">
@@ -69,15 +80,26 @@
               <span class="radio__label">I accept the terms and privacy</span>
             </label>
            </div>
-           <p class="error">You must accept the terms of privacy</p>
+           <p class="error" id="check-error">You must accept the terms of privacy</p>
           </div>
 
           <div class="button-container">
             <button id="button" onclick="check()">Register</button>
           </div>
-        </div>
+        </div> 
        
       </div>
+
+
+
+      <!--hidden-->
+      <section class="return" id="returnPage">
+        <div class="second">
+          <img src="/data 1.png" >
+          <h1 id="sucess">Sucess!</h1>
+      </div>
+        <button class="return-button" id="return" onclick="returnButton()" >Go Back!</button>
+      </section>
 
 
       </section>

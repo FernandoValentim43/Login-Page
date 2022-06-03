@@ -1,19 +1,38 @@
+
 body {
   margin: 0;
+  height: 100%; 
+  overflow: hidden;
   padding: 0;
   background-color: #e5e5e5;
   font-family: 'Inter', sans-serif;
 }
 
+
 section {
-    display: flex;
-    max-width: 90vh;
     background: #FFFFFF;
     border-radius: 20px;
     margin: auto;
+<<<<<<< HEAD
     margin-top: 10vh;
     margin-bottom: 1vh;
+=======
+>>>>>>> phone
     flex-direction: column;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    height: 92vh
+}
+
+
+img {
+    max-width: 30vh;
+}
+
+
+.main {
+    display: flex;
+    max-width: 90vh;
 }
 
 /*first img*/
@@ -132,6 +151,7 @@ input[type="date"], input[type="time"] {
 
 .third-container {
     display: flex;
+    flex-direction: column;
 }
 
 /*Password*/
@@ -157,11 +177,22 @@ input[type="date"], input[type="time"] {
 
 /*check and button*/
 .last-container {
+<<<<<<< HEAD
+=======
+
+>>>>>>> phone
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     align-items: flex-start;
     justify-content: left;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-right: 4rem;
+
+    flex-direction: row;
 }
 
 /*check box*/
@@ -180,9 +211,7 @@ input[type="date"], input[type="time"] {
 }
 
 
-.last-container p {
-    margin-bottom: 8px;
-}
+
 
 .check-box-label label {
     display: flex;
@@ -191,8 +220,7 @@ input[type="date"], input[type="time"] {
     font-size: 1rem;
     justify-content: center;
     align-items: center;
-
-   
+   flex-wrap: wrap;
 }
 
 .check-box-label input {
@@ -200,6 +228,10 @@ input[type="date"], input[type="time"] {
     opacity: 0;
     width: 1em;
     height: 1em;
+}
+
+#check-error {
+    font-weight: lighter;
 }
 
 
@@ -211,13 +243,18 @@ input[type="date"], input[type="time"] {
     border: 0.1em solid currentColor;
     margin-bottom: 20px;
     margin-right: 5px;
+    border-color:#8c8c8c;
+
+    box-shadow: 0 4px 3px -2px gray;
 
 }
 
 .checkbox__control svg {
+    color: white;
     transition: transform 0.1s ease-in 25ms;
     transform: scale(0);
     transform-origin: bottom left;
+    
 }
   
   
@@ -251,12 +288,16 @@ input[type="date"], input[type="time"] {
     background-color: #0DBDBD;;
     border-radius: 9px;
     border: 2px solid #0DBDBD; 
-    
-
     cursor: pointer;
     
+} 
+
+/*return page*/
+.second {
+    margin-bottom: 45%;
 }
 
+<<<<<<< HEAD
 
 
 /*quarys*/
@@ -276,4 +317,177 @@ input[type="date"], input[type="time"] {
 
 /*notebook*/
   
+=======
+.return {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.return-button {
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 5.8vh;    text-align: center;
+    color: white;
+    font-weight: bold;
+
+    padding: 5.9vh;
+    background-color: #0DBDBD;;
+    border-radius: 9px;
+    border: 2px solid #0DBDBD; 
+    cursor: pointer;
+
+}
+
+.second h1 {
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: bolder;
+    font-weight: bolder;
+    font-size: 5.8vh;
+    padding: 6px;
+    margin: 0vh;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 660px) {
+    body {
+      background-color: rgb(255, 255, 255);
+    }
+
+    /*main*/
+    .main {
+        margin: 3vh;
+    }
+
+    .main h1 {
+        font-size: 2.3rem;
+    }
+    
+    input {
+        height: 2.6em;
+        border-radius: 4px;
+        border: 2px solid #AAAAAA;
+        padding-left: 8px;
+    }
+
+    .error {
+        display: none;
+    }
+
+    .name {
+        font-size: 1.2rem;
+    }
+
+    .full-name-container {
+        font-size: 1.3rem;
+        width: 98%;
+        margin-bottom: 7%;
+    }
+
+    ::placeholder {
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.1rem;
+        font-weight: bold;
+        
+        
+    }
+
+
+    .inputs {
+      margin-left: 0.6rem;
+      margin-right: 0.6rem;
+    }
+
+    .second-container {
+        flex-direction: column;
+        width: 100%;
+       
+        
+    }
+    
+    .third-container {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .last-container {
+        flex-direction: row;
+        
+    }
+
+    .email-container input {
+        width: 96%;
+        margin-bottom: 7%;
+    }
+
+    .phone-container input {
+        width: 90%;
+        margin-right: 8%;
+    }
+
+    .birthday-container  {
+        width: 90%;
+        margin-left: 8%;
+    }
+
+    .birthday-container input {
+        width: 91.5%;
+    }
+
+    .last-container {
+        margin: 4%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+
+    .check-box-container {
+        max-height: 50px;
+    }
+
+
+    .checkbox__control {
+         width: 1.2em;
+         height: 1.2em;
+     }
+
+
+     #button {
+         width: 100%;
+         padding: 4%;
+         margin-top: 5%;
+     }
+
+
+
+     /*retunr page*/
+     .return {
+         width: 100%;
+     }
+
+     span {
+         font-size: 1.3rem;
+         font-weight: bold;
+     }
+
+     .button-container {
+         width: 100%;
+     }
+
+    
+     .return-button {
+        padding: 10%;
+        width: 100%;
+       
+    }
+
+    
+
+
+}
+
+
+>>>>>>> phone
   
