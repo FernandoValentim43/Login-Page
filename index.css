@@ -1,355 +1,326 @@
-
 body {
-  margin: 0;
-  height: 100%; 
-  overflow: hidden;
-  padding: 0;
-  background-color: #e5e5e5;
-  font-family: 'Inter', sans-serif;
-}
-
-
-section {
-    background: #FFFFFF;
-    border-radius: 20px;
-    margin: auto;
-<<<<<<< HEAD
-    margin-top: 10vh;
-    margin-bottom: 1vh;
-=======
->>>>>>> phone
-    flex-direction: column;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    height: 92vh
-}
-
-
-img {
-    max-width: 30vh;
-}
-
-
-.main {
-    display: flex;
-    max-width: 90vh;
-}
-
-/*first img*/
-
-.first {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.first h1 {
-    font-family: 'Inter';
-    font-weight: bolder;
-    font-weight: bolder;
-    font-size: 5.8vh;
-    color: black;
-    padding: 6px;
-    margin: 0vh;
-}
-
-
-
-/*inputs*/
-
-.inputs {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 4rem;
-    margin-right: 4rem;
-
-    flex-direction: column;
-}
-
-.error {
-    color: red;
-    margin: 0.15rem;
-    width: 100%;
-    padding-bottom: 5px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.90rem;
-    visibility: hidden ;
-}
-
-input {
-    height: 2.5em;
-    border-radius: 4px;
-    border: 2px solid #AAAAAA;
-    padding-left: 8px;
-}
-
-
-::placeholder {
-    font-family: 'Nunito', sans-serif;
-    font-size: 0.9rem;
-    font-weight: bold;
-    
-    
-}
-
-
-input[type="date"], input[type="time"] {
-    font-family: 'Nunito', sans-serif;
-    color: #767676;
-}
-
-
-/*name input*/
-
-
-.name {
-    margin-top: 0;
-    margin-bottom: 0;
-
-    font-family: 'Nunito', sans-serif;
-    color: #767676;
-    font-size: 0.9rem;
-    
-}
-
-.full-name-container input {
-    width: 98%;
-}
-
-
-/*email & phone*/
-
-.second-container {
-    display: flex;
-}
-
-
-
-/*email*/
-.email-container {
-    flex: 2;
-}
-
-
-.email-container input {
-    margin-right: 50px;
-    width: 90%;
-}
-
-/*phone*/
-.phone-container {
-    flex: 1;
-}
-
-.phone-container input {
-    width: 94%;
-}
-
-/*password & birthday*/
-
-
-.third-container {
-    display: flex;
-    flex-direction: column;
-}
-
-/*Password*/
-
-.password-container {
-    flex: 2;
-}
-
-.password-container input {
-    margin-right: 50px;
-    width: 90%;
-}
-
-/*birthday*/
-.birthday-container {
-    flex: 1;
-}
-
-.birthday-container input {
-    width: 94%;
-}
-
-
-/*check and button*/
-.last-container {
-<<<<<<< HEAD
-=======
-
->>>>>>> phone
-    display: flex;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    align-items: flex-start;
-    justify-content: left;
-
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 4rem;
-    margin-right: 4rem;
-
-    flex-direction: row;
-}
-
-/*check box*/
-.check-box-container {
-    flex:2;
-}
-
-.check-box-label {
-    display: flex;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    align-items: flex-start;
-    justify-content: left;
-   
-    
-}
-
-
-
-
-.check-box-label label {
-    display: flex;
-    padding-top: 3.2px;
-    font-weight: bold;
-    font-size: 1rem;
-    justify-content: center;
-    align-items: center;
-   flex-wrap: wrap;
-}
-
-.check-box-label input {
-    display: flex;
-    opacity: 0;
-    width: 1em;
-    height: 1em;
-}
-
-#check-error {
-    font-weight: lighter;
-}
-
-
-.checkbox__control {
-   display: flex;
-    width: 1em;
-    height: 1em;
-    border-radius: 0.25em;
-    border: 0.1em solid currentColor;
-    margin-bottom: 20px;
-    margin-right: 5px;
-    border-color:#8c8c8c;
-
-    box-shadow: 0 4px 3px -2px gray;
-
-}
-
-.checkbox__control svg {
-    color: white;
-    transition: transform 0.1s ease-in 25ms;
-    transform: scale(0);
-    transform-origin: bottom left;
-    
-}
+    margin: 0;
+    height: 100%; 
+    overflow: hidden;
+    padding: 0;
+    background-color: #e5e5e5;
+    font-family: 'Inter', sans-serif;
+  }
   
   
-.checkbox__input input:checked
- + .checkbox__control svg {
-
-  transform: scale(1);
-  background-color: #0DBDBD;
-}
-
-
-/*button*/
-.button-container {
-    display: flex;
-    flex: 1;
-    justify-content: end;
-    margin-top: 10px;
+  section {
+      background: #FFFFFF;
+      border-radius: 20px;
+      margin: auto;
+      flex-direction: column;
+      margin-top: 5vh;
+      margin-bottom: 10vh;
+      height: 92vh
+  }
   
-    font-weight: bold;
-    padding-top: 10px;
-}
-
-.button-container button {
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-
-    padding: 6px;
-    background-color: #0DBDBD;;
-    border-radius: 9px;
-    border: 2px solid #0DBDBD; 
-    cursor: pointer;
+  
+  img {
+      max-width: 30vh;
+  }
+  
+  
+  .main {
+      display: flex;
+      max-width: 90vh;
+  }
+  
+  /*first img*/
+  
+  .first {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+  }
+  
+  .first h1 {
+      font-family: 'Inter';
+      font-weight: bolder;
+      font-weight: bolder;
+      font-size: 5.8vh;
+      color: black;
+      padding: 6px;
+      margin: 0vh;
+  }
+  
+  
+  
+  /*inputs*/
+  
+  .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 4rem;
+      margin-right: 4rem;
+  
+      flex-direction: column;
+  }
+  
+  .error {
+      color: red;
+      margin: 0.15rem;
+      width: 100%;
+      padding-bottom: 5px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.90rem;
+      visibility: hidden ;
+  }
+  
+  input {
+      height: 2.5em;
+      border-radius: 4px;
+      border: 2px solid #AAAAAA;
+      padding-left: 8px;
+  }
+  
+  
+  ::placeholder {
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.9rem;
+      font-weight: bold;
+      
+      
+  }
+  
+  
+  input[type="date"], input[type="time"] {
+      font-family: 'Nunito', sans-serif;
+      color: #767676;
+  }
+  
+  
+  /*name input*/
+  
+  
+  .name {
+      margin-top: 0;
+      margin-bottom: 0;
+  
+      font-family: 'Nunito', sans-serif;
+      color: #767676;
+      font-size: 0.9rem;
+      
+  }
+  
+  .full-name-container input {
+      width: 98%;
+  }
+  
+  
+  /*email & phone*/
+  
+  .second-container {
+      display: flex;
+  }
+  
+  
+  
+  /*email*/
+  .email-container {
+      flex: 2;
+  }
+  
+  
+  .email-container input {
+      margin-right: 50px;
+      width: 90%;
+  }
+  
+  /*phone*/
+  .phone-container {
+      flex: 1;
+  }
+  
+  .phone-container input {
+      width: 94%;
+  }
+  
+  /*password & birthday*/
+  
+  
+  .third-container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  /*Password*/
+  
+  .password-container {
+      flex: 2;
+  }
+  
+  .password-container input {
+      margin-right: 50px;
+      width: 90%;
+  }
+  
+  /*birthday*/
+  .birthday-container {
+      flex: 1;
+  }
+  
+  .birthday-container input {
+      width: 94%;
+  }
+  
+  
+  /*check and button*/
+  .last-container {
+  
+      display: flex;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      align-items: flex-start;
+      justify-content: left;
+  
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 4rem;
+      margin-right: 4rem;
+  
+      flex-direction: row;
+  }
+  
+  /*check box*/
+  .check-box-container {
+      flex:2;
+  }
+  
+  .check-box-label {
+      display: flex;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      align-items: flex-start;
+      justify-content: left;
+     
+      
+  }
+  
+  
+  
+  
+  .check-box-label label {
+      display: flex;
+      padding-top: 3.2px;
+      font-weight: bold;
+      font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+     flex-wrap: wrap;
+  }
+  
+  .check-box-label input {
+      display: flex;
+      opacity: 0;
+      width: 1em;
+      height: 1em;
+  }
+  
+  #check-error {
+      font-weight: lighter;
+  }
+  
+  
+  .checkbox__control {
+     display: flex;
+      width: 1em;
+      height: 1em;
+      border-radius: 0.25em;
+      border: 0.1em solid currentColor;
+      margin-bottom: 20px;
+      margin-right: 5px;
+      border-color:#8c8c8c;
+  
+      box-shadow: 0 4px 3px -2px gray;
+  
+  }
+  
+  .checkbox__control svg {
+      color: white;
+      transition: transform 0.1s ease-in 25ms;
+      transform: scale(0);
+      transform-origin: bottom left;
+      
+  }
     
-} 
-
-/*return page*/
-.second {
-    margin-bottom: 45%;
-}
-
-<<<<<<< HEAD
-
-
-/*quarys*/
-/*monitor*/
-@media only screen and (max-width: 1366px) {
-    section {
-        display: flex;
-        max-width: 90vh;
-        background: #FFFFFF;
-        border-radius: 20px;
-        margin: auto;
-        margin-top: 2vh;
-        flex-direction: column;
-    }
     
+  .checkbox__input input:checked
+   + .checkbox__control svg {
+  
+    transform: scale(1);
+    background-color: #0DBDBD;
+  }
+  
+  
+  /*button*/
+  .button-container {
+      display: flex;
+      flex: 1;
+      justify-content: end;
+      margin-top: 10px;
+    
+      font-weight: bold;
+      padding-top: 10px;
+  }
+  
+  .button-container button {
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      font-size: 1.2rem;
+  
+      padding: 6px;
+      background-color: #0DBDBD;;
+      border-radius: 9px;
+      border: 2px solid #0DBDBD; 
+      cursor: pointer;
+      
+  } 
+  
+  /*return page*/
+  .second {
+      margin-bottom: 45%;
+  }
+  
+  .return {
+      display: none;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .return-button {
+      
+      font-family: 'Nunito', sans-serif;
+      font-size: 5.8vh;    text-align: center;
+      color: white;
+      font-weight: bold;
+  
+      padding: 5.9vh;
+      background-color: #0DBDBD;;
+      border-radius: 9px;
+      border: 2px solid #0DBDBD; 
+      cursor: pointer;
+  
+  }
+  
+  .second h1 {
+      text-align: center;
+      font-family: 'Inter';
+      font-weight: bolder;
+      font-weight: bolder;
+      font-size: 5.8vh;
+      padding: 6px;
+      margin: 0vh;
   }
 
-/*notebook*/
-  
-=======
-.return {
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
 
-.return-button {
-    
-    font-family: 'Nunito', sans-serif;
-    font-size: 5.8vh;    text-align: center;
-    color: white;
-    font-weight: bold;
-
-    padding: 5.9vh;
-    background-color: #0DBDBD;;
-    border-radius: 9px;
-    border: 2px solid #0DBDBD; 
-    cursor: pointer;
-
-}
-
-.second h1 {
-    text-align: center;
-    font-family: 'Inter';
-    font-weight: bolder;
-    font-weight: bolder;
-    font-size: 5.8vh;
-    padding: 6px;
-    margin: 0vh;
-}
-
-/*media queries*/
+  /*media queries*/
 
 @media only screen and (max-width: 660px) {
     body {
@@ -489,5 +460,3 @@ input[type="date"], input[type="time"] {
 }
 
 
->>>>>>> phone
-  
