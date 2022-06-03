@@ -11,7 +11,8 @@ section {
     background: #FFFFFF;
     border-radius: 20px;
     margin: auto;
-    margin-top: 5vh;
+    margin-top: 10vh;
+    margin-bottom: 1vh;
     flex-direction: column;
 }
 
@@ -156,7 +157,6 @@ input[type="date"], input[type="time"] {
 
 /*check and button*/
 .last-container {
-    margin-top: 5rem;
     display: flex;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -257,3 +257,23 @@ input[type="date"], input[type="time"] {
     
 }
 
+
+
+/*quarys*/
+/*monitor*/
+@media only screen and (max-width: 1366px) {
+    section {
+        display: flex;
+        max-width: 90vh;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin: auto;
+        margin-top: 2vh;
+        flex-direction: column;
+    }
+    
+  }
+
+/*notebook*/
+  
+  
