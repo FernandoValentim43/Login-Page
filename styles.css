@@ -322,15 +322,22 @@ body {
 
   /*media queries*/
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 680px) {
+    html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
     body {
-      background-color: rgb(255, 255, 255);
+      position: relative;
+      background-color: white;
     }
 
-    /*main*/
     .main {
-        margin: 3vh;
+        max-width: 100%;
+        height: 100%;
     }
+
 
     .main h1 {
         font-size: 2.3rem;
@@ -435,11 +442,11 @@ body {
 
      /*retunr page*/
      .return {
-         width: 100%;
+         width: 70%;
      }
 
      span {
-         font-size: 1.3rem;
+         font-size: 1.15rem;
          font-weight: bold;
      }
 
@@ -449,7 +456,7 @@ body {
 
     
      .return-button {
-        padding: 10%;
+        padding: 1rem;
         width: 100%;
        
     }
