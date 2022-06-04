@@ -1,6 +1,17 @@
 
-let titleH1 = document.getElementById("title").innerText;
-let chkBike = document.getElementById("check"); //checkbox
+
+const doc = document.getElementById.bind(document);
+
+function hidden(name, display) {
+    if(display == "none") {
+      doc(name).style.display = "none"
+    } else if (display == "flex") {
+      doc(name).style.display = "flex";
+    }
+}
+
+let titleH1 = doc("title").innerText;
+let chkBike = doc("check"); //checkbox
 //get all "errors" P, then run trough the node list turning each of them invisible;
 function check() {
    let errors = document.getElementsByClassName('error');
@@ -11,19 +22,19 @@ function check() {
 
 
    if (chkBike.checked) {
-     document.getElementById("first").style.display = "none";
-     document.getElementById("last").style.display = "none";
-     document.getElementById("inputs").style.display = "none";
-     document.getElementById("returnPage").style.display = "flex";
+    hidden("first", "none");
+    hidden("last", "none");
+    hidden("inputs", "none");
+    hidden("returnPage", "flex");
   } 
 };
 
 //return to main page
 function returnButton() {
-  document.getElementById("first").style.display = "block";
-  document.getElementById("last").style.display = "flex";
-  document.getElementById("inputs").style.display = "flex";
-  document.getElementById("returnPage").style.display = "none";
+  hidden("first", "flex");
+  hidden("last", "flex");
+  hidden("inputs", "flex");
+  hidden("returnPage", "none");
 }
 
 
