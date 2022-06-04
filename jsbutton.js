@@ -1,25 +1,35 @@
 
-
+//change elemenet by id display
 const doc = document.getElementById.bind(document);
-
 function hidden(name, display) {
     if(display == "none") {
       doc(name).style.display = "none"
     } else if (display == "flex") {
       doc(name).style.display = "flex";
+    } else {
+      doc(name).style.display = "block";
     }
 }
+
+//change erros menssages visibility 
+const errors = document.getElementsByClassName('error');
+function clearError(x) {
+  let stateDisplay;
+  (x ? stateDisplay = "visible" : stateDisplay = "hidden");
+
+  for (let i = 0 ; i < errors.length ; i ++) {
+   let s = errors[i].style;
+   s.visibility = stateDisplay;
+  }
+}
+
+
 
 let titleH1 = doc("title").innerText;
 let chkBike = doc("check"); //checkbox
 //get all "errors" P, then run trough the node list turning each of them invisible;
 function check() {
-   let errors = document.getElementsByClassName('error');
-   for (let i = 0 ; i < errors.length ; i ++) {
-    var s = errors[i].style;
-    s.visibility = "visible";
-   }
-
+clearError(true);
 
    if (chkBike.checked) {
     hidden("first", "none");
@@ -31,10 +41,7 @@ function check() {
 
 //return to main page
 function returnButton() {
-  hidden("first", "flex");
-  hidden("last", "flex");
-  hidden("inputs", "flex");
-  hidden("returnPage", "none");
+ location.reload();
 }
 
 

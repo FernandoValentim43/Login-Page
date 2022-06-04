@@ -68,8 +68,8 @@ body {
       padding-bottom: 5px;
       font-family: 'Nunito', sans-serif;
       font-size: 0.90rem;
-      visibility: hidden ;
-  }
+      visibility: hidden;
+    }
   
   input {
       height: 2.5em;
@@ -216,44 +216,11 @@ body {
   
   .check-box-label input {
       display: flex;
-      opacity: 0;
-      width: 1em;
-      height: 1em;
+      accent-color: #0DBDBD;
   }
   
   #check-error {
       font-weight: lighter;
-  }
-  
-  
-  .checkbox__control {
-     display: flex;
-      width: 1em;
-      height: 1em;
-      border-radius: 0.25em;
-      border: 0.1em solid currentColor;
-      margin-bottom: 20px;
-      margin-right: 5px;
-      border-color:#8c8c8c;
-  
-      box-shadow: 0 4px 3px -2px gray;
-  
-  }
-  
-  .checkbox__control svg {
-      color: white;
-      transition: transform 0.1s ease-in 25ms;
-      transform: scale(0);
-      transform-origin: bottom left;
-      
-  }
-    
-    
-  .checkbox__input input:checked
-   + .checkbox__control svg {
-  
-    transform: scale(1);
-    background-color: #0DBDBD;
   }
   
   
@@ -262,10 +229,10 @@ body {
       display: flex;
       flex: 1;
       justify-content: end;
-      margin-top: 10px;
+      
     
       font-weight: bold;
-      padding-top: 10px;
+      
   }
   
   .button-container button {
@@ -276,7 +243,7 @@ body {
       font-size: 1.2rem;
   
       padding: 6px;
-      background-color: #0DBDBD;;
+      background-color: #0DBDBD;
       border-radius: 9px;
       border: 2px solid #0DBDBD; 
       cursor: pointer;
