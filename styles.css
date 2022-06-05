@@ -10,6 +10,7 @@ body {
   
   
   section {
+     
       background: #FFFFFF;
       border-radius: 20px;
       margin: auto;
@@ -288,7 +289,7 @@ body {
 
   /*media queries*/
 
-@media only screen and (max-width: 680px) {
+@media screen and (max-width: 670px) , screen and (max-height: 550px) {
     html {
         overflow-x: hidden;
         overflow-y: hidden;
