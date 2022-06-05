@@ -20,48 +20,61 @@ function hidden(name, display) {
   }
 }
 
-//change erros menssages visibility
-const errors = document.getElementsByClassName("error");
-function clearError(x) {
-  let stateDisplay;
-  x ? (stateDisplay = "visible") : (stateDisplay = "hidden");
-
-  for (let i = 0; i < errors.length; i++) {
-    let s = errors[i].style;
-    s.visibility = stateDisplay;
-  }
-}
-
-const titleH1 = doc("title").innerText;
+const titleH1 = doc("title").innerText; //succes text
 const chkBike = doc("check"); //checkbox
 
 const btn = doc("button");
-doc("button").addEventListener("click", nextPage);
+doc("button").addEventListener("click", nextPage); //on button click show the next page
 
 
-//get all "errors" P, then run trough the node list turning each of them invisible;
-function nextPage() {
-  if (chkBike.checked) {
-    hidden("first", "none");
-    hidden("last", "none");
-    hidden("inputs", "none");
-    hidden("returnPage", "flex");
-  }
-}
-
-//return to main page
-function returnButton() {
-  location.reload();
-  localStorage.clear(); //clean local storage
-}
-
+//store the inputs values into variables
 let input = doc("inputName");
 let email = doc("inputEmail");
 let birthDay = doc("phone");
 let phone = doc("inputBirthDay");
 let password = doc("inputPassword");
 
+function checkError() {
+  if(chkBike.checked) {
+    console.log("checado")
+    document.getElementById("check-error").style.visibility = "hidden";
+  } else {
+    console.log("nao checado")
+    document.getElementById("check-error").style.visibility = "visible";
 
+  }
+}
+
+function checkAllInputs() {
+  if(input.checkValidity() && email.checkValidity() && password.checkValidity() && birthDay.checkValidity()) {
+    return true;
+  }
+}
+
+//check if every *required item is valid, then run the next page
+function nextPage() {
+  if(chkBike.checked && checkAllInputs()) {
+    hidden("first", "none");
+    hidden("last", "none");
+    hidden("inputs", "none");
+    hidden("returnPage", "flex");
+  } else {
+    let errors = document.getElementsByClassName('error');
+    for (let i = 0 ; i < errors.length ; i ++) {
+    var s = errors[i].style;
+    s.visibility = "visible";
+   }
+  }
+}
+
+
+
+
+//return to main page
+function returnButton() {
+  location.reload();
+  localStorage.clear(); //clean local storage
+}
 
 //form local storage
 doc("button").addEventListener("click", saveToLocal);
@@ -88,7 +101,7 @@ function valitadeInput(thisValue ,state) {
 }
 
 function check(xyz, errorName) {      
-  xyz.addEventListener('keydown', () => {let checking = xyz.checkValidity();
+  xyz.addEventListener('blur', () => {let checking = xyz.checkValidity();
  if (checking == false) {
    valitadeInput(errorName ,"visible") 
  } else {
@@ -96,11 +109,9 @@ function check(xyz, errorName) {
  }});
  }
 
-
-
-
 input.addEventListener('keydown', check(input, "errorName"));
 email.addEventListener('keydown', check(email, "errorMail"));
+phone.addEventListener('keydown',check(phone, "errorPhone"))
 password.addEventListener('keydown', check(password, "errorPassword"));
 
 

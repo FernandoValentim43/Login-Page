@@ -22,7 +22,7 @@
              
           <div class="full-name-container">
             <p class="name">Full name*</p>
-            <input type="text" placeholder="Name" id="inputName" pattern="[a-z]{1,15}" required/>
+            <input type="text" placeholder="Name" id="inputName" pattern="[A-Za-z ]{1,30}" class="input" required/> 
             <p class="error" id="errorName" >Fullname Invalid</p>
 
           </div>
@@ -30,12 +30,12 @@
           <div class="second-container">
             <div class="email-container">
               <p class="name">Email*</p>
-              <input type="email" placeholder="foo@bar.com"  id="inputEmail" autocomplete="off" required/>
+              <input type="email" placeholder="foo@bar.com"  id="inputEmail" autocomplete="off" class="input"  required/>
               <p class="error" id="errorMail">Email Invalid</p>
   
               <div class="password-container">
                 <p class="name">Password*</p>
-                <input type="password" id="inputPassword" required/>
+                <input type="password" id="inputPassword" class="input" required/>
                 <p class="error" id="errorPassword">Password Invalid</p>
               </div>         
             </div>
@@ -43,14 +43,14 @@
             <div class="third-container">
               <div class="phone-container">
                 <p class="name">Phone</p>
-                <input type="text" id="phone" id="inputPhone" placeholder="(88) 00000-0000">
+                <input type="tel" id="phone" placeholder="(88) 00000-0000" class="input" required/>
                 <p class="error" id="errorPhone">Phone Invalid</p>
             </div>    
   
                 <div class="birthday-container">
                   <p class="name">Birthday*</p>
-                  <input type="date"  id="inputBirthDay" required/>
-                  <p class="error" id="errorAge">Age Invalid</p>
+                  <input type="date"  id="inputBirthDay" class="input"  required />
+                  <!-- <p id="errorPhone">Phone Invalid</p> -->
               </div>
             </div>
             </div>
@@ -62,7 +62,7 @@
              <div class="check-box-label">
               <label class="checkbox">
                 <span class="checkbox__input">
-                  <input type="checkbox" name="checkbox" id="check">
+                  <input type="checkbox" name="checkbox" id="check" onchange="checkError()" required />
                 </span>
                 <span class="radio__label">I accept the terms and privacy</span>
               </label>
@@ -72,7 +72,7 @@
   
             
             <div class="button-container">
-              <input type="submit" id="button" value="register" >     
+              <input type="submit" id="button" value="register" onsubmit="nextPage()">     
             </div>
           </div>  
        </form>
