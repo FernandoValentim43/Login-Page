@@ -53,18 +53,18 @@ function checkAllInputs() {
 
 //check if every *required item is valid, then run the next page
 function nextPage() {
-  if(chkBike.checked && checkAllInputs()) {
+  if(chkBike.checked && checkAllInputs()) { //if chekcbox is checked AND all inputs are valid
     hidden("first", "none");
     hidden("last", "none");
     hidden("inputs", "none");
     hidden("returnPage", "flex");
   } else {
-    let errors = document.getElementsByClassName('error');
-    for (let i = 0 ; i < errors.length ; i ++) {
-    var s = errors[i].style;
-    s.visibility = "visible";
+    document.getElementById("errorName").style.visibility = "visible";
+    document.getElementById("errorMail").style.visibility = "visible";
+    document.getElementById("errorPassword").style.visibility = "visible";
+    document.getElementById("errorPhone").style.visibility = "visible";
+    document.getElementById("errorAge").style.visibility = "visible";
    }
-  }
 }
 
 
@@ -111,12 +111,35 @@ function check(xyz, errorName) {
 
 input.addEventListener('keydown', check(input, "errorName"));
 email.addEventListener('keydown', check(email, "errorMail"));
-phone.addEventListener('keydown',check(phone, "errorPhone"))
 password.addEventListener('keydown', check(password, "errorPassword"));
 
 
 
-  
-  
+let phoneInput = doc("phone");
+phoneInput.addEventListener('blur', checkPhone);
+function checkPhone() {
+    if(phoneInput.value == "") {
+      document.getElementById("errorPhone").style.visibility = "visible";
+    } else {
+      document.getElementById("errorPhone").style.visibility = "hidden";
+    }
+}
+
+let ageInput = doc("inputBirthDay");
+ageInput.addEventListener('blur', checkAge);
+function checkAge() {
+    if(!ageInput.value) {
+      document.getElementById("errorAge").style.visibility = "visible";
+    } else {
+      document.getElementById("errorAge").style.visibility = "hidden";
+    }
+}
+
+
+
+
+
+
+
 
 
