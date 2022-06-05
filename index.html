@@ -21,19 +21,19 @@
              
         <div class="full-name-container">
           <p class="name">Full name*</p>
-          <input type="text" placeholder="Name" autocomplete="off" >
+          <input type="text" placeholder="Name" id="inputName">
           <p class="error" id="error" >Fullname Invalid</p>
         </div>
 
         <div class="second-container">
           <div class="email-container">
             <p class="name">Email*</p>
-            <input type="email" placeholder="foo@bar.com" autocomplete="off" >
+            <input type="email" placeholder="foo@bar.com"  id="inputEmail" autocomplete="off">
             <p class="error" id="error">Email Invalid</p>
 
             <div class="password-container">
               <p class="name">Password*</p>
-              <input type="password" autocomplete="off" >
+              <input type="password" id="inputPassword">
               <p class="error">Password Invalid</p>
             </div>         
           </div>
@@ -41,21 +41,19 @@
           <div class="third-container">
             <div class="phone-container">
               <p class="name">Phone</p>
-              <input type="text" id="phone" placeholder="(88) 00000-0000" autocomplete="off">
+              <input type="text" id="phone" placeholder="(88) 00000-0000" id="inputPhone" >
               <p class="error">Phone Invalid</p>
           </div>    
 
               <div class="birthday-container">
                 <p class="name">Birthday*</p>
-                <input type="date" autocomplete="off"  >
+                <input type="date"  id="inputBirthDay" >
                 <p class="error">Age Invalid</p>
             </div>
           </div>
 
 
           </div>
-        </div>
-
         </div>
 
         <div class="last-container" id="last">
@@ -72,11 +70,10 @@
           </div>
 
           <div class="button-container">
-            <button id="button" onclick="check()">Register</button>
+            <input type="submit" id="button" onclick="check()" value="Register" form="name">
           </div>
-        </div> 
-       
-      </div>
+        </div>  
+      
 
 
 
