@@ -17,62 +17,65 @@
            <h1 id="title">Intern Sign Up</h1>
        </div>
 
-       <div class="inputs" id="inputs">    
+       <form action="">
+        <div class="inputs" id="inputs">    
              
-        <div class="full-name-container">
-          <p class="name">Full name*</p>
-          <input type="text" placeholder="Name" id="inputName">
-          <p class="error" id="error" >Fullname Invalid</p>
-        </div>
+          <div class="full-name-container">
+            <p class="name">Full name*</p>
+            <input type="text" placeholder="Name" id="inputName" pattern="[a-z]{1,15}" required/>
+            <p class="error" id="errorName" >Fullname Invalid</p>
 
-        <div class="second-container">
-          <div class="email-container">
-            <p class="name">Email*</p>
-            <input type="email" placeholder="foo@bar.com"  id="inputEmail" autocomplete="off">
-            <p class="error" id="error">Email Invalid</p>
-
-            <div class="password-container">
-              <p class="name">Password*</p>
-              <input type="password" id="inputPassword">
-              <p class="error">Password Invalid</p>
-            </div>         
           </div>
-
-          <div class="third-container">
-            <div class="phone-container">
-              <p class="name">Phone</p>
-              <input type="text" id="phone" placeholder="(88) 00000-0000" id="inputPhone" >
-              <p class="error">Phone Invalid</p>
-          </div>    
-
-              <div class="birthday-container">
-                <p class="name">Birthday*</p>
-                <input type="date"  id="inputBirthDay" >
-                <p class="error">Age Invalid</p>
+          
+          <div class="second-container">
+            <div class="email-container">
+              <p class="name">Email*</p>
+              <input type="email" placeholder="foo@bar.com"  id="inputEmail" autocomplete="off" required/>
+              <p class="error" id="errorMail">Email Invalid</p>
+  
+              <div class="password-container">
+                <p class="name">Password*</p>
+                <input type="password" id="inputPassword" required/>
+                <p class="error" id="errorPassword">Password Invalid</p>
+              </div>         
+            </div>
+  
+            <div class="third-container">
+              <div class="phone-container">
+                <p class="name">Phone</p>
+                <input type="text" id="phone" id="inputPhone" placeholder="(88) 00000-0000">
+                <p class="error" id="errorPhone">Phone Invalid</p>
+            </div>    
+  
+                <div class="birthday-container">
+                  <p class="name">Birthday*</p>
+                  <input type="date"  id="inputBirthDay" required/>
+                  <p class="error" id="errorAge">Age Invalid</p>
+              </div>
+            </div>
             </div>
           </div>
-
-
-          </div>
-        </div>
-
-        <div class="last-container" id="last">
-          <div class="check-box-container">
-           <div class="check-box-label">
-            <label class="checkbox">
-              <span class="checkbox__input">
-                <input type="checkbox" name="checkbox" id="check">
-              </span>
-              <span class="radio__label">I accept the terms and privacy</span>
-            </label>
-           </div>
-           <p class="error" id="check-error">You must accept the terms</p>
-          </div>
-
-          <div class="button-container">
-            <input type="submit" id="button" onclick="check()" value="Register" form="name">
-          </div>
-        </div>  
+  
+          
+          <div class="last-container" id="last">
+            <div class="check-box-container">
+             <div class="check-box-label">
+              <label class="checkbox">
+                <span class="checkbox__input">
+                  <input type="checkbox" name="checkbox" id="check">
+                </span>
+                <span class="radio__label">I accept the terms and privacy</span>
+              </label>
+             </div>
+             <p class="error" id="check-error">You must accept the terms</p>
+            </div>
+  
+            
+            <div class="button-container">
+              <input type="submit" id="button" value="register" >     
+            </div>
+          </div>  
+       </form>
       
 
 
