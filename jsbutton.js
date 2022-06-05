@@ -34,6 +34,7 @@ let birthDay = doc("phone");
 let phone = doc("inputBirthDay");
 let password = doc("inputPassword");
 
+//check if checkbox is checked or not
 function checkError() {
   if(chkBike.checked) {
     console.log("checado")
@@ -45,6 +46,7 @@ function checkError() {
   }
 }
 
+//check all inputs valitidy
 function checkAllInputs() {
   if(input.checkValidity() && email.checkValidity() && password.checkValidity() && birthDay.checkValidity()) {
     return true;
@@ -77,7 +79,7 @@ function returnButton() {
 }
 
 //form local storage
-doc("button").addEventListener("click", saveToLocal);
+document.addEventListener('keyup', saveToLocal);
 function saveToLocal() {
   localStorage.setItem("nome", input.value);
   localStorage.setItem("email", email.value);
@@ -99,7 +101,7 @@ window.addEventListener("load", () => {
 function valitadeInput(thisValue ,state) {
   document.getElementById(thisValue).style.visibility = state;
 }
-
+//check element valitidy(based on regex pattern) then change its visivility if invalid
 function check(xyz, errorName) {      
   xyz.addEventListener('blur', () => {let checking = xyz.checkValidity();
  if (checking == false) {
@@ -109,12 +111,13 @@ function check(xyz, errorName) {
  }});
  }
 
+//add listeners to inputs
 input.addEventListener('keydown', check(input, "errorName"));
 email.addEventListener('keydown', check(email, "errorMail"));
 password.addEventListener('keydown', check(password, "errorPassword"));
 
 
-
+//listners dont work the same with tel and date inputs...
 let phoneInput = doc("phone");
 phoneInput.addEventListener('blur', checkPhone);
 function checkPhone() {
