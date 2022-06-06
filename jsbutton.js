@@ -30,8 +30,8 @@ doc("button").addEventListener("click", nextPage); //on button click show the ne
 //store the inputs values into variables
 let input = doc("inputName");
 let email = doc("inputEmail");
-let birthDay = doc("phone");
-let phone = doc("inputBirthDay");
+let birthDay = doc("inputBirthDay");
+let phone = doc("phone");
 let password = doc("inputPassword");
 
 //check if checkbox is checked or not
@@ -83,8 +83,8 @@ document.addEventListener('keyup', saveToLocal);
 function saveToLocal() {
   localStorage.setItem("nome", input.value);
   localStorage.setItem("email", email.value);
-  localStorage.setItem("phoneNumber", birthDay.value);
-  localStorage.setItem("birthDay", phone.value);
+  localStorage.setItem("phoneNumber", phone.value);
+  localStorage.setItem("birthDay", birthDay.value);
   //not remember password in local storage
 }
 
@@ -92,8 +92,8 @@ function saveToLocal() {
 window.addEventListener("load", () => {
   input.value = localStorage.getItem("nome");
   email.value = localStorage.getItem("email");
-  birthDay.value = localStorage.getItem("phoneNumber");
-  phone.value = localStorage.getItem("birthDay");
+  birthDay.value = localStorage.getItem("birthDay");
+  phone.value = localStorage.getItem("phoneNumber");
 });
 
 
